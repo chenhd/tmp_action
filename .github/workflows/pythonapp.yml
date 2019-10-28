@@ -27,4 +27,4 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest -c tmp.py --durations=3
+        python tmp.py
