@@ -1,23 +1,17 @@
-# print("hello world")
+def pytest_report_header(config):
+    return "project deps: mylib-1.1"
+
+# content of test_some_are_slow.py
+import time
 
 
+def test_funcfast():
+    time.sleep(0.1)
 
 
-
-# content of test_sample.py
-def inc(x):
-    return x + 1
+def test_funcslow1():
+    time.sleep(0.2)
 
 
-def test_answer():
-    assert inc(3) == 5
-
-
-def T():
-  assert True
-
-# def F():
-#   assert False
-
-def tmp():
-  assert False
+def test_funcslow2():
+    time.sleep(0.3)
