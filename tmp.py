@@ -1,5 +1,5 @@
-def pytest_report_header(config):
-    return "project deps: mylib-1.1"
+# def pytest_report_header(config):
+#     return "project deps: mylib-1.1"
 
 # content of test_some_are_slow.py
 import time
